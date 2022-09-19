@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Script that concatenates two strings and 
+""" Script that concatenates two strings and
     returns a new string """
 
 
