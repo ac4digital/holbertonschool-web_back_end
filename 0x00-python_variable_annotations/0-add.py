@@ -2,6 +2,7 @@
 """ Script that calculates the sum of
 two floats and returns a float """
 
+
 def add(a: float, b: float) -> float:
     """ Calculates the sum of two floats
     Args:
