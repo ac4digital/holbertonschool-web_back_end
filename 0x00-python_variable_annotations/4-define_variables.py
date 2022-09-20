@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Define and annotate the following variables
-    with the specific values 
+    with the specific values
         a: int
         pi: float
         i_understand_annotations: boolean
