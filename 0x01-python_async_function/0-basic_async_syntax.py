@@ -5,6 +5,7 @@
 import asyncio
 import random
 
+
 async def wait_random(max_delay: int = 10) -> float:
     """ Returns time to delay """
     delay: int = random.uniform(0, max_delay)
