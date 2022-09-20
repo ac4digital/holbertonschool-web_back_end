@@ -4,7 +4,7 @@
         a: int
         pi: float
         i_understand_annotations: boolean
-        school: Holberton 
+        school: Holberton
 """
 
 
