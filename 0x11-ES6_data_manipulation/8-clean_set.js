@@ -1,17 +1,12 @@
-// returns a string of all the set values that start with a specific string (startString).
 export default function cleanSet(set, startString) {
-  let string = '';
-  if (typeof (startString) === 'string' && startString !== '') {
-    set.forEach((val) => {
-      if (val.includes(startString)) string = string.concat(`-${val.replace(startString, '')}`);
-    });
-    string = string.substring(1);
-  }
-  return string;
+  let newString = '';
+  // const newArr = [...set]
+  if (!startString || startString.length === 0) return newString;
+
+  set.forEach((word) => {
+    if (word && word.startsWith(startString)) {
+      newString += newString.length === 0 ? word.replace(startString, '') : word.replace(startString, '-');
+    }
+  });
+  return newString;
 }
-/*
-console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'));
-console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''));
-console.log(cleanSet(new Set(['id-test', 'id-chicken', 'id-user', 'id-id-']), 'id-'));
-console.log(cleanSet(new Set(['id-test', 'id-chicken', 'id-user', 'id-id-']), ''));
-console.log(cleanSet(new Set(['id-test', 'id-chicken', 'id-user', 'id-id-']), [])); */
