@@ -9,6 +9,6 @@ const queryAPI _= (endpoint) => {
     } else {
         weakMap.set(endpoint, 1);
     }
-}
+};
 
-export {queryAPI, weakMap};
+export { queryAPI, weakMap };
